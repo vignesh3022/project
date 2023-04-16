@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="t.css">
+    <script>
+        function onclick_event(){
+            document.getElementById("geeks").innerHTML="You can now play!"
+        }
+        function fun(){
+            alert("Password cannot be empty")
+        }
+    
+    </script>
+
+
+</head>
+
+<body>
+    <div class="wrapper login">  
+        <div class="container-n">
+            <div class="col-left">
+                <div class="login-text">
+                    <h2>Welcome!</h2>
+                    <p >Create your account.<br>For Free!</p><a href="#sectionhome" class="btn">Play</a> 
+                    
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="login-form">
+                    <h2>Login</h2>
+                    <form action="">
+                        <p> <label>Username/Email address<span>*</span></label> <input type="text" placeholder="Username or Email" required> </p>
+                        <p > <label>Password<span>*</span></label> <input type="password" placeholder="Password" required> </p>
+                        <p id="geeks" onclick="onclick_event()"> 
+                        <input type="submit" value="Sign In">
+                          </p>
+                    </form>     
+                </div>
+            </div>
+  
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+             
+                <div id="sectionhome">
+                    <div class="bg-container d-flex flex-row justify-content-end">
+                        <div class="bg-card">
+                            <h1 class="main-head">
+                            TREASURE HUNT BEGINS</h1>
+                            <p class="para">
+                            In the end of this journey you are about to find a treasure.Unlock all the steps and reach the treasure.....</p>
+            
+                            </p>
+                        
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReObPGjo2CnIAl36mrGYcpbi7uR3rOcS4VKgTybz9Duw&usqp=CAU&ec=48665701" class="bot-img"/>
+                            <div class="d-flex flex-column justify-content-center">
+                                 <button class="main-btn" onclick="display('sectionq1')">
+                                 CLICK TO PLAY
+                                </button>
+                            </div>
+                        </div>
+                        <img src="https://img.freepik.com/premium-vector/hand-drawn-flat-design-treasure-hunt-game_23-2149285956.jpg?w=2000" class="img"/>
+                    </div> 
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+   
+    <div id="sectionq1">
+        <div class="bg-quest d-flex flex-column justify-content-end">
+            <h3 class="head">LEVEL 1</h3>
+            <p class="q-para">I am at a place where packages rest,from here they"TRAVEL EAST & WEST".I am a jungle of products from a to z and also a river.Find hardcover cost of highlighted part?</p>
+            <button class="q-btn btn btn-success" onclick="display('sectionq2')">NEXT</button>
+        </div>
+        <img src="https://think.kera.org/wp-content/uploads/2022/09/shutterstock_1710628027.jpg" class="q-img"/>
+    </div> 
+    <div id="sectionq2">
+        <div class="bg-quest d-flex flex-column justify-content-end">
+            <h3 class="head">LEVEL 2</h3>
+            <p class="q-para">Got me......<br/>Count on my digital sum(eg. digital sum of 456 is 4+5+6=15)and link me to cricket,follow me where my tweets sing like a bird in my description</p>
+            <button class="q-btn btn btn-success" onclick="display('sectionq3')">NEXT</button>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh7LzIvEf_ZRELWdGT455XC30xqJ3LLaB4_-Ak85UiO3scceb9deNK3lx3e5i8VWF1OjE9Ej3BIAQ&usqp=CAU&ec=48665701" class="q-img"/>
+    </div>
+    <div id="sectionq3">
+        <div class="bg-quest d-flex flex-column justify-content-end">
+            <h3 class="head">LEVEL 3</h3>
+            <p class="q-para">
+            I am a 6 letter word with no repetition formed from the letters of the word you get from the previous clue.I can be used as verb and a noun.My noun form represents act of forgiving and verb forms represents to forgive.I start and end with the same letter of the previous word.<br/>
+            U found me... Later,locate me on google maps where coffee beans thrive with 4.6 stars and identify my country.</p>
+            <button class="q-btn btn btn-success" onclick="display('sectionq4')">NEXT</button>
+        </div>
+        <img src="https://w7.pngwing.com/pngs/383/636/png-transparent-red-question-mark-on-human-illustration-question-mark-3d-computer-graphics-animation-thinking-man-3d-computer-graphics-text-people.png" class="q-img"/>
+    </div>
+    <div id="sectionq4">
+        <div class="bg-quest d-flex flex-column justify-content-end">
+            <h3 class="head">LEVEL 4</h3>
+            <p class="q-para">Type me in youtube,open up 45 min video.At the timeline of Obor Market,find me as a mall.</p>
+            <button class="q-btn btn btn-success" onclick="display('sectionq5')">NEXT</button>
+        </div>
+        <img src="https://blog.authenticjourneys.info/wp-content/uploads/2015/05/ill-think-about-it.jpg" class="q4-img"/>
+    </div>
+    <div id="sectionq5">
+        <div class="bg-quest d-flex flex-column justify-content-end">
+            <h3 class="head">LEVEL 5</h3>
+            <p class="q-para">To get next clue,Enter password which is a Indian hotel,get the password by adding up letter 'h' to previous mall clue.</p>
+            <img src="https://res.cloudinary.com/dc5u1bhqw/image/upload/v1681568126/eif_ry3gl9.jpg" class="qr-img"/>
+            <button class="q-btn btn btn-success" onclick="display('sectionq6')">NEXT</button>
+        </div>
+    </div>
+    <div id="sectionq6">
+        <div class="bg-quest d-flex flex-column justify-content-end">
+            <h3 class="head">LEVEL 6</h3>
+            <p class="q-para">Height of my tower(feet) and take last two digits for the next clue.</p>
+            <button class="l-btn btn btn-danger" onclick="display('sectionans')">84</button>
+            <button class="l-btn btn btn-danger">
+                <a href="https://interacty.me/projects/cbeae54ded2600a0">83</a>
+            </button>
+            <button class="l-btn btn btn-danger" onclick="display('sectionloop')">88</button>
+            <button class="l-btn btn btn-danger" onclick="display('sectionend')">86</button>
+        </div>
+        <img src="https://cdn.memiah.co.uk/uploads/counselling-directory.org.uk/image_gallery/Mind-1612365176-hero.jpg" class="q-img"/>
+    </div>
+    <div id="sectionloop">
+        <div class="bg-quest d-flex flex-column justify-content-end">
+            <h3 class="head">LEVEL7</h3>
+            <p class="q-para">Select the month with the number of days as per the clue.</p>
+            <button class="q-btn btn btn-success" onclick="display('sectionq5')">APRIL</button>
+            <button class="q-btn btn btn-success" onclick="display('sectionq5')">NOVEMBER</button>
+            <button class="q-btn btn btn-success" onclick="display('sectionq5')">SEPTEMBER</button>
+            <button class="q-btn btn btn-success" onclick="display('sectionq5')">JUNE</button>
+        </div>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/bundles/16265/mweo8p5d4bs9eipg/header_ratio.jpg?t=1604634393" class="q4-img"/>
+    </div>
+    <div id="sectionend">
+        <div class="bg-quest d-flex flex-column justify-content-end">
+            <h3 class="head">LEVEL7</h3>
+            <p class="q-para">Click for hint!</p>
+            <button class="q-btn btn btn-success" onclick="display('sectionq1')">Oops!It's dead end go to first</button>
+        </div>
+        <img src="https://images.pexels.com/photos/163728/dead-end-sign-cul-de-sac-hopeless-163728.jpeg?cs=srgb&dl=pexels-pixabay-163728.jpg&fm=jpg" class="q-img"/>
+    </div>
+    <div id="sectionans">
+        <div class="bg-quest d-flex flex-column justify-content-end">
+            <h3 class="head">LEVEL 7</h3>
+            <p class="q-para">I am a word of letters formed by the digital sum of the latter.6,7,8,9,10,11 is a popular girl name in North America.7,11,9,9,11,12 mean taller.6,3,11,5 depicts star.11,1,12 is always infront of us,but can't be seen.2,4,11,3 has a synonym of tidy.1,2,3 is a data type.1,2,3,4,12,4,6,3 mean interest.Who am I?
+                <br/>Search me at 'X', X is a place where stories and shared and binge-watchers can do their thing.X is enclosed from stranger things to friends.And the clue lays in more,the last word  which is the dead end of it.
+            </p>
+            <button class="q-btn btn btn-success" onclick="display('sectionq8')">NEXT</button>
+        </div>
+        <img src="https://media.carnegie.org/filer_public_thumbnails/filer_public/bc/e6/bce6532c-67e3-4674-9c7f-739ec6ca5cf5/gettyimages-1371383097.jpg__1440x810_q85_crop_subsampling-2_upscale.jpg" class="q4-img"/>
+    </div>
+    <div id="sectionq8">
+        <div class="bg-quest d-flex flex-column justify-content-end">
+            <h3 class="head">LEVEL 8</h3>
+            <p class="q-para">Select creatures which has previous clue?</p>
+            <div class="b-b d-flex flex-row justify-content-center">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/23/2023/02/What-is-a-hydra--c61beb0.jpg" class="b-img" onclick="display('sectionend')"/>
+                <img src="https://static.scientificamerican.com/sciam/cache/file/B7E980C5-B182-4A2E-80369F2AC535EB35_source.jpg" class="b-img" onclick="display('sectionno')"/>
+            </div>
+            <div class="b-b d-flex flex-row justify-content-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Aplysina_archeri_%28Stove-pipe_Sponge-pink_variation%29.jpg/1200px-Aplysina_archeri_%28Stove-pipe_Sponge-pink_variation%29.jpg" class="b-img" onclick="display('sectionlast')"/>
+                <a href="https://interacty.me/projects/4c988725c55aba9f">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Sucking_leech.jpg" class="b-img"/>
+                </a>
+        
+                   
+            </div>
+        </div>
+
+    </div>
+    <div id="sectionno">
+        <div class="bg-quest d-flex flex-column justify-content-end">
+            <h4>SORRY!!</h4>
+            <p class="para">You have come in wrong way.This way has no Treasure....Try again!</p>
+            <button class="no-btn" onclick="display('sectionhome')">Restart</button>
+
+        </div>
+        <img src="https://cdn.simplystamps.com/media/catalog/product/1/1/11140-try-again-round-teacher-grading-stamp-hcb.png" class="q-img"/>
+        
+        
+    </div>
+    <div id="sectionlast">
+        <div class="bg-quest d-flex flex-column justify-content-end">
+            <h3 class="head">LEVEL 9</h3>
+            <p class="q-para">Choose me?</p>
+            <div class="b-b d-flex flex-row justify-content-center">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/1200px-SpongeBob_SquarePants_character.svg.png" class="b-img" onclick="display('sectionlast')"/>
+                <img src="https://m.media-amazon.com/images/I/81eu40npYGS.AC_SL1500.jpg" class="b-img" onclick="display('sectionlast')"/>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-YIe2UvRb9T6e4pB1rOaVpI0T3IOP-J2rM-XGEgEiug&usqp=CAU&ec=48665701" class="bl-img" onclick="display('sectionlast')"/>
+            </div>
+            <div class="no-btn" onclick="display('sectionhome')">END</div>
+            
+        </div>
+    </div>
+
+
+    
+    
+<script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+</body>
+
+</html>
